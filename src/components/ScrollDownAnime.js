@@ -5,14 +5,14 @@ function ScrollDownAnime() {
   useEffect(() => {
     setTimeout(() => {
       document.querySelector('.scroll-icon').style.visibility = 'visible';
-    }, 5000)
+    }, 5000);
   });
   return (
-    <div className="scroll-icon" onload={ () => setLoaded(true) }>
-      <div class="chevron"></div>
-      <div class="chevron"></div>
-      <div class="chevron"></div>
-      <span class="text">View my Skills</span>
+    <div className="scroll-icon" onLoad={() => setLoaded(true)}>
+      <div className="chevron" />
+      <div className="chevron" />
+      <div className="chevron" />
+      <span className="text">View my Skills</span>
     </div>
   );
 }

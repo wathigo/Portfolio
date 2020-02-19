@@ -1,13 +1,13 @@
 import React from 'react';
 
 import PersonalInfo from './PersonalInfo';
-import ScrollDownAnime from './ScrollDownAnime'
+import ScrollDownAnime from './ScrollDownAnime';
 
 function LandingPage() {
   return (
     <div className="landing-page">
-      <PersonalInfo/>
-      <ScrollDownAnime/>
+      <PersonalInfo />
+      <ScrollDownAnime />
     </div>
   );
 }
