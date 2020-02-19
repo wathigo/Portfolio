@@ -8,7 +8,7 @@ function ScrollDownAnime() {
     }, 5000)
   });
   return (
-    <div className="scroll-icon" onload={ () => setLoaded(true)}>
+    <div className="scroll-icon" onload={ () => setLoaded(true) }>
       <div class="chevron"></div>
       <div class="chevron"></div>
       <div class="chevron"></div>

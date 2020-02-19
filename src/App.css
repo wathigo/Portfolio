@@ -73,6 +73,7 @@ a i{
   left: 50vw;
   height: 24px;
   visibility: hidden;
+  cursor: pointer;
 }
 
 .chevron {
