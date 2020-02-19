@@ -33,7 +33,7 @@
 ## About The Project
 
   <a href="#">
-    <img src="./src/images/logo.png" alt="Logo">
+    <img src="./src/images/home.gif" alt="Logo">
   </a>
 
 A simple react project for my portfolio
