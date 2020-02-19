@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="src/images/logo.png" alt="Logo">
+    <img height="24" width="24" src="src/images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Potfolio</h3>
