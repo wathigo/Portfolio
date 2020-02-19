@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <LandingPage />
+      <h2>TOP SKILLS</h2>
       <SkillsPage />
     </div>
   );

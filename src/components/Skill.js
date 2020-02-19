@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class Skill extends React.Component {
   render() {
@@ -9,6 +9,7 @@ class Skill extends React.Component {
     return (
       <div className="skill">
         <h3>{data.name}</h3>
+        <a href="#"dangerouslySetInnerHTML={{__html: data.icon}}></a>
         <h4>Knowledge Acquired</h4>
         <ul>
           {
@@ -20,8 +21,8 @@ class Skill extends React.Component {
   }
 }
 
-// Skill.propTypes = {
-//    data: PropTypes.object.isRequired
-// };
+Skill.propTypes = {
+   data: PropTypes.object.isRequired
+};
 
 export default Skill;

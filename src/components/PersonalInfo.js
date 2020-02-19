@@ -11,8 +11,11 @@ function PersonalInfo() {
             .typeString("<p class='name'>I'M SIMON WATHIGO KINUTHIA</p>")
             .pauseFor(500)
             .typeString(
-              "<b>Looking for opportunities as a:</b> <p class='role'>FULL STACK WEB DEVELOPER</p>"
+              "<b>Looking for opportunities as a:</b>"
             )
+            .typeString("<p class='role'>FULL STACK WEB DEVELOPER</p>")
+            .typeString("<p class='role'>FRONT END DEVELOPER</p>")
+            .typeString("<p class='last-role'>BACKEND END DEVELOPER</p>")
             .pauseFor(1000)
             .changeDelay(5)
             .start();
