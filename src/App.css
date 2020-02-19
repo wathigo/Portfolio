@@ -9,7 +9,7 @@ html, body {
 
 .Typewriter .name{
   font-size: 3em;
-  margin: 0 0 0.8em, 0;
+  margin: 0 0 0 0;
   background: radial-gradient(center 20px, circle, #616161 0%, #616161 20%, #282828 100%);
 }
 
