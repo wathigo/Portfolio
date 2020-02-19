@@ -1,28 +1,13 @@
 import React from 'react';
 
-import Typewriter from 'typewriter-effect';
+import PersonalInfo from './PersonalInfo';
+import ScrollDownAnime from './ScrollDownAnime'
 
 function LandingPage() {
   return (
     <div className="landing-page">
-    <Typewriter
-    onInit={(typewriter) => {
-      typewriter.changeDelay(30)
-      .typeString('<p class="name">Simon Wathigo Kinuthia</p>')
-      .pauseFor(1500)
-      .changeDelay(5)
-      .start();
-      typewriter.typeString(
-        '<b>Location:</b> <p>Nairobi, Kenya</p>')
-      .start();
-      typewriter.typeString('<b>Contact Information:</b>')
-       .typeString('<p class="mail">Email: wathigosimon@gmail.com </p>')
-       .typeString('<a class="icons" href="https://linkedin.com/in/simon-wathigo-445370183"><i class="fab fa-linkedin-in"></i></a>')
-       .typeString('<a class="icons" href="https://github.com/wathigo"><i class="fab fa-github"></i></a>')
-       .typeString('<a class="icons" href="https://twitter.com/simon_wathigo"><i class="fab fa-twitter"></i></a>')
-      .start();
-    }}
-    />
+      <PersonalInfo/>
+      <ScrollDownAnime/>
     </div>
   );
 }
