@@ -6,12 +6,12 @@ function PersonalInfo() {
   return (
     <div className="personal-info">
       <Typewriter
-        onInit={typewriter => {
+        onInit={(typewriter) => {
           typewriter.changeDelay(30)
             .typeString("<p class='name'>I'M SIMON WATHIGO KINUTHIA</p>")
             .pauseFor(500)
             .typeString(
-              "<b>Looking for opportunities as a:</b>"
+              '<b>Looking for opportunities as a:</b>',
             )
             .typeString("<p class='role'>FULL STACK WEB DEVELOPER</p>")
             .typeString("<p class='role'>FRONT END DEVELOPER</p>")

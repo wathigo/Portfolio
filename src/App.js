@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <LandingPage />
-      <div id='pos'>
+      <div id="pos">
         <h2>TOP SKILLS</h2>
         <SkillsPage />
       </div>

@@ -10,7 +10,7 @@ function ScrollDownAnime() {
     }, 9000);
   });
   return (
-    <div id='scroll' className="scroll-icon" onLoad={() => setLoaded(true)}>
+    <div id="scroll" className="scroll-icon" onLoad={() => setLoaded(true)}>
       <div className="chevron" />
       <div className="chevron" />
       <div className="chevron" />
@@ -20,7 +20,7 @@ function ScrollDownAnime() {
 }
 
 const handleClick = () => {
-  animateScroll('pos')
-}
+  animateScroll('pos');
+};
 
 export default ScrollDownAnime;
