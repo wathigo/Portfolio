@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactWOW from 'react-wow';
 
-class Skill extends React.Component {
+class Skill extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { data } = this.props;
-    console.log(data);
-    const description = data.description.map((desc) => <li>{desc}</li>);
+    const description = data.description.map(desc => <li>{desc}</li>); // eslint-disable-line
     return (
       <ReactWOW animation={data.animation} scroll data-wow-duration="2s" data-wow-delay="5s">
         <div className="skill wow">
@@ -24,7 +23,7 @@ class Skill extends React.Component {
 }
 
 Skill.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired, // eslint-disable-line
 };
 
 export default Skill;
