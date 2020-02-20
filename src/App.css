@@ -160,6 +160,12 @@ a i{
   white-space: nowrap;
   opacity: .25;
   animation: pulse 2s linear alternate infinite;
+  background-color: inherit;
+  border: none;
+}
+
+.text:hover {
+  border: none;
 }
 
 @keyframes pulse {

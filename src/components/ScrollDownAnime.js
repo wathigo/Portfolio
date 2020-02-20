@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import animateScroll from './SmoothScroll';
 
 
-const handleClick = () => {
+const handleClick = (e) => {
+  e.preventDefault();
   animateScroll('pos');
 };
 
@@ -19,7 +20,8 @@ function ScrollDownAnime() {
       <div className="chevron" />
       <div className="chevron" />
       <div className="chevron" />
-      <span onClick={handleClick} className="text">View my Skills</span> // eslint-disable-line
+      <button type="submit" onClick={handleClick} className="text">View my Skills</button>
+      {' '}
     </div>
   );
 }
