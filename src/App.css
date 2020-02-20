@@ -3,6 +3,10 @@ html, body {
   margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Landing Page */
 
 /* Personal Info */
@@ -211,4 +215,5 @@ h3, h4{
 
 h2{
   text-align: center;
+  font-family: 'Share Tech', sans-serif;
 }
