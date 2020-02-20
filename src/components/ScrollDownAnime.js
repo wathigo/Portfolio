@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 import animateScroll from './SmoothScroll';
 
+
+const handleClick = () => {
+  animateScroll('pos');
+};
+
 function ScrollDownAnime() {
   const [loaded, setLoaded] = useState(false); // eslint-disable-line no-unused-vars
   useEffect(() => {
@@ -18,9 +23,5 @@ function ScrollDownAnime() {
     </div>
   );
 }
-
-const handleClick = () => {
-  animateScroll('pos');
-};
 
 export default ScrollDownAnime;
