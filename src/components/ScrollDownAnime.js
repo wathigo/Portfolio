@@ -5,7 +5,7 @@ function ScrollDownAnime() {
   useEffect(() => {
     setTimeout(() => {
       document.querySelector('.scroll-icon').style.visibility = 'visible';
-    }, 8000);
+    }, 9000);
   });
   return (
     <div className="scroll-icon" onLoad={() => setLoaded(true)}>

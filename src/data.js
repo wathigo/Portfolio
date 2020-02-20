@@ -1,26 +1,26 @@
 const skills = [
   {
-    icon: '<i class="fab fa-html5"></i>',
+    animation: 'slideInLeft',
     name: 'HTML5',
     description: ['Use of Semantic elements', 'Creation of mobile responsive pages', 'Bootstrap']
   },
   {
-    icon: '<img src="https://vectorified.com/images/ruby-icon-25.png" width="30" />',
+    animation: 'slideInRight',
     name: 'Ruby',
     description: ['Object Oriented Programming', 'Single responsibility Rule', 'Clean and readable code', 'Functional Programming']
   },
   {
-    icon: '<img src="https://vectorified.com/images/ruby-on-rails-icon-26.png" width="30" />',
+    animation: 'slideInLeft',
     name: 'Ruby on Rails',
     description: ['Authentication', 'Associations', 'Rails API']
   },
   {
-    icon: '<i class="fab fa-js-square"></i>',
+    animation: 'slideInRight',
     name: 'JavaScript',
     description: ['Es6 syntax', 'Functional programming', 'Writing clean and readable code']
   },
   {
-    icon: '<i class="fab fa-react"></i>',
+    animation: 'slideInLeft',
     name: 'React-redux',
     description: ['Use of React Hooks', 'Redux for state management']
   }

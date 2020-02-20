@@ -35,7 +35,7 @@ html, body {
 
 .landing-page {
   position: relative;
-  color: #f8d605;
+  color: #f8d605;;
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -181,11 +181,30 @@ a i{
   box-shadow: inset 0 0 10px 0 #000000;
   padding: 0.8em;
   box-sizing:border-box;
-  background-color: #B5EBF5;
+  background-color: #0f0f23;
+  color: #00cc00;
+  font-family: 'Share Tech', sans-serif;
+  text-align: center;
   border: 1.1em solid #fff;
   border-radius: 3em;
 }
 
+h4{
+  color: #f8d605;
+}
+
+h3, h4{
+  margin: 0 0 0.3em 0;
+}
+
+.skill ul li{
+  list-style: none;
+  color: #cccccc;
+}
+
+.skill ul{
+  margin: 0 0 0.3em 0;
+}
 .skill i{
   color: #000;
 }

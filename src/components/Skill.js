@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactWOW from 'react-wow';
 
 class Skill extends React.Component {
   render() {
@@ -7,9 +8,9 @@ class Skill extends React.Component {
     console.log(data)
     const description = data.description.map(desc => <li>{desc}</li>)
     return (
-      <div className="skill">
+      <ReactWOW animation={data.animation} scroll={true} data-wow-duration={'2s'} data-wow-delay={"5s"}>
+      <div className="skill wow">
         <h3>{data.name}</h3>
-        <a href="#"dangerouslySetInnerHTML={{__html: data.icon}}></a>
         <h4>Knowledge Acquired</h4>
         <ul>
           {
@@ -17,6 +18,7 @@ class Skill extends React.Component {
         }
         </ul>
       </div>
+      </ReactWOW>
     );
   }
 }
