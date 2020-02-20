@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import animateScroll from './SmoothScroll';
 
 
-const handleClick = (e) => {
+const handleClick = e => {
   e.preventDefault();
   animateScroll('pos');
 };
