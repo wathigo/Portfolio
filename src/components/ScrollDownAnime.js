@@ -19,7 +19,7 @@ function ScrollDownAnime() {
       <div className="chevron" />
       <div className="chevron" />
       <div className="chevron" />
-      <span onClick={handleClick} className="text">View my Skills</span>
+      <span onClick={handleClick} className="text">View my Skills</span> // eslint-disable-line
     </div>
   );
 }
