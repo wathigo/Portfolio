@@ -3,6 +3,7 @@ import './App.css';
 
 import LandingPage from './components/LandingPage';
 import SkillsPage from './components/SkillsPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <h2>TOP SKILLS</h2>
         <SkillsPage />
       </div>
+      <Footer/>
     </div>
   );
 }

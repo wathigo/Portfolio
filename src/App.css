@@ -47,6 +47,7 @@ html {
   background: radial-gradient(rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0))no-repeat,
               url('images/see.jpeg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .Typewriter {
@@ -177,26 +178,24 @@ a i{
 /* skills */
 
 .skills-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  /* background-color: #B5EBF5; */
+  flex-wrap: wrap;
+  padding: 2em;
+  background-image: linear-gradient(to bottom, #16222a, #3F0E40);
+  background-color: #16222a;
 }
 
 .skill{
-  width: 100%;
-  flex: 0 50%;
-  box-shadow: inset 0 0 10px 0 #000000;
-  padding: 0.8em;
+  width: 80%;
+  height: 23vh;
+  margin: 0 auto 2vh auto;
   box-sizing:border-box;
-  background-color: #0f0f23;
-  color: #00cc00;
+  color: #fff;
   font-family: 'Share Tech', sans-serif;
   text-align: center;
-  border: 1.1em solid #fff;
   border-radius: 3em;
+  display: flex;
 }
 
 h4{
@@ -209,7 +208,7 @@ h3, h4{
 
 .skill ul li{
   list-style: none;
-  color: #cccccc;
+  /* color: #cccccc; */
 }
 
 .skill ul{
@@ -219,7 +218,82 @@ h3, h4{
   color: #000;
 }
 
+.skill .desc {
+  text-align: center;
+  width: 33%;
+}
+
+.skill .img-cont {
+  position: relative;
+  width: 33%;
+  height: 23vh;
+}
+
+.skill .img-cont .overlay {
+  position: absolute;
+  left: 0;
+  border-bottom: 0;
+  line-height: 23vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2) 20%,
+      rgba(0, 0, 0, 0.7)
+    );
+  visibility: hidden;
+}
+
+.skill .img-cont .overlay a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.skill .img-cont .overlay a:hover {
+  text-decoration: underline;
+}
+
+.skill figure {
+  height: 10vh;
+  width: 100%;
+  height: 23vh;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.skill figure img {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skill .tec-cont {
+  width: 33%;
+}
+
+.skill .tec-cont ul{
+  margin-top: 2em;
+}
+
+.skill .tec-cont li{
+  display: inline;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin-right: 0.2em;
+}
+
 h2{
   text-align: center;
   font-family: 'Share Tech', sans-serif;
+}
+
+/* Footer */
+footer {
+  height: 10vh;
+  margin-top: 5vh;
+  text-align: center;
+  width: 100vw;
+  display: inline-block;
 }
