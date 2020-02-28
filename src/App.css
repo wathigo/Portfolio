@@ -301,9 +301,6 @@ footer {
 
 
 @media only screen and (max-width:790px) {
-  .cl-right {
-    /* clear: right; */
-  }
 
   .Typewriter {
     width: 90%;
@@ -345,5 +342,45 @@ footer {
 
   .skills-page .skill .tec-cont h4 {
     display: none;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  .skills-page .skill {
+    height: 25vh;
+  }
+
+  .skills-page .skill .img-cont {
+    height: 25vh;
+    width: 45%;
+  }
+
+  .skills-page .skill .desc {
+    top: 0;
+  }
+
+  .skills-page .skill .desc h3 {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .desc h4 {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .desc ul li {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .tec-cont {
+    bottom: 10vh;
+  }
+
+  .skills-page .skill .tec-cont ul li {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .tec-cont, .skills-page .skill .desc {
+    left: 45vw;
+    width: 35vw;
   }
 }
