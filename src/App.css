@@ -346,6 +346,8 @@ footer {
 }
 
 @media only screen and (max-width:720px) {
+  /* Skills page */
+
   .skills-page .skill {
     height: 25vh;
   }
@@ -382,5 +384,19 @@ footer {
   .skills-page .skill .tec-cont, .skills-page .skill .desc {
     left: 45vw;
     width: 35vw;
+  }
+
+  /* Landing Page */
+
+  .Typewriter .name {
+    font-size: 1.6em;
+  }
+
+  .Typewriter b {
+    font-size: 1.2em;
+  }
+
+  .Typewriter .role, .Typewriter .last-role, .Typewriter p {
+    font-size: 1em;
   }
 }
