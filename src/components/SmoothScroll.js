@@ -23,7 +23,7 @@ const animate = (elem, style, unit, from, to, time, prop) => {
 
 const animateScroll = id => {
   const target = document.querySelector(`#${id}`);
-  animate(document.scrollingElement || document.documentElement, 'scrollTop', '', 0, target.offsetTop, 500, true);
+  animate(document.scrollingElement || document.documentElement, 'scrollTop', '', 0, target.offsetTop, 1000, true);
 };
 
 export default animateScroll;

@@ -18,10 +18,10 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
         <div className="skill wow">
           <div onMouseEnter={this.showOverlay.bind(this, `o-${data.id}`)} onMouseLeave={this.hideOverlay.bind(this, `o-${data.id}`)} className='img-cont'>
             <div className={'overlay ' + 'o-' + data.id}>
-              <a href='#'> Live Demo </a>
+              <a href={data.src} target='_blank'> Live Demo </a>
             </div>
             <figure>
-              <img src={require('../images/' + 1 + '.png')}></img>
+              <img src={require('../images/' + data.id + '.png')}></img>
             </figure>
           </div>
           <div className='desc'>
@@ -33,12 +33,14 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
           }
             </ul>
           </div>
+
           <div className='tec-cont'>
             <h4>Technologies</h4>
             <ul>
               {technologies}
             </ul>
           </div>
+
         </div>
       </ReactWOW>
     );

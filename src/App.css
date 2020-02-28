@@ -5,6 +5,7 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Landing Page */
@@ -26,7 +27,7 @@ html {
 .Typewriter p{
   margin-bottom: 0.8em;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .Typewriter b{
@@ -44,7 +45,7 @@ html {
   width: 100%;
   margin: 0;
   text-align: center;
-  background: radial-gradient(rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0))no-repeat,
+  background: radial-gradient(rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.4))no-repeat,
               url('images/see.jpeg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -73,12 +74,12 @@ a i{
 
 .Typewriter .role{
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .Typewriter .last-role{
   margin-bottom: 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 /* Scroll Animated icon */
@@ -136,7 +137,7 @@ a i{
     opacity: 1;
 
   }
-  33% {
+  30% {
     opacity: 1;
     transform: translateY(30px);
   }
@@ -178,16 +179,15 @@ a i{
 /* skills */
 
 .skills-page {
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
-  flex-wrap: wrap;
   padding: 2em;
   background-image: linear-gradient(to bottom, #16222a, #3F0E40);
   background-color: #16222a;
 }
 
 .skill{
-  width: 80%;
+  width: 90%;
   height: 23vh;
   margin: 0 auto 2vh auto;
   box-sizing:border-box;
@@ -213,6 +213,7 @@ h3, h4{
 
 .skill ul{
   margin: 0 0 0.3em 0;
+  padding: 0;
 }
 .skill i{
   color: #000;
@@ -220,12 +221,12 @@ h3, h4{
 
 .skill .desc {
   text-align: center;
-  width: 33%;
+  width: 30%;
 }
 
 .skill .img-cont {
   position: relative;
-  width: 33%;
+  width: 30%;
   height: 23vh;
 }
 
@@ -239,9 +240,9 @@ h3, h4{
   top: 0;
   z-index: 2;
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2) 20%,
-      rgba(0, 0, 0, 0.7)
+    radial-gradient(
+      rgba(0, 0, 0, 0.8) 20%,
+      rgba(0, 0, 0, 0.5)
     );
   visibility: hidden;
 }
@@ -270,7 +271,7 @@ h3, h4{
 }
 
 .skill .tec-cont {
-  width: 33%;
+  width: 30%;
 }
 
 .skill .tec-cont ul{
@@ -296,4 +297,12 @@ footer {
   text-align: center;
   width: 100vw;
   display: inline-block;
+}
+
+
+@media only screen and (max-width:790px) {
+  .Typewriter {
+    width: 90%;
+    left: 5%;
+  }
 }
