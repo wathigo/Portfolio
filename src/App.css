@@ -301,8 +301,49 @@ footer {
 
 
 @media only screen and (max-width:790px) {
+  .cl-right {
+    /* clear: right; */
+  }
+
   .Typewriter {
     width: 90%;
     left: 5%;
+  }
+
+  .skills-page .skill  {
+    display: block;
+    min-height: 35vh;
+    position: relative;
+  }
+
+  .skills-page .skill .img-cont {
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+    height: 35vh;
+    left: 0;
+  }
+
+  .skills-page .skill .img-cont figure {
+    height: 100%;
+  }
+
+  .skills-page .skill .desc, .skills-page .skill .tec-cont{
+    position: absolute;
+  }
+
+  .skills-page .skill .desc {
+    top: 5vh;
+    left: 52vw;
+  }
+
+  .skills-page .skill .tec-cont {
+    bottom: 5vh;
+    left: 52vw;
+    width: 30vw;
+  }
+
+  .skills-page .skill .tec-cont h4 {
+    display: none;
   }
 }
