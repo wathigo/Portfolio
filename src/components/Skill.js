@@ -21,7 +21,7 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
     const { data } = this.props;
     const description = data.description.map(desc => <li>{desc}</li>); // eslint-disable-line
     const technologies = data.tec.map(desc => <li>{desc}</li>); // eslint-disable-line
-    return (
+    return (/* eslint-disable */ 
       <ReactWOW animation={data.animation} scroll data-wow-duration="2s" data-wow-delay="5s">
         <div className="skill wow">
           <div onMouseEnter={() => { this.showOverlay(`o-${data.id}`); }} onMouseLeave={() => { this.hideOverlay(`o-${data.id}`); }} className="img-cont">
@@ -29,7 +29,7 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
               <a href={data.src} rel="noopener noreferrer" target="_blank"> Live Demo </a>
             </div>
             <figure>
-              <img src={require(`../images/${data.id}.png`)} alt="project screenshot" /> // eslint-disable-line
+              <img src={require(`../images/${data.id}.png`)} alt="project screenshot" />
             </figure>
           </div>
           <div className="desc">
