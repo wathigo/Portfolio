@@ -9,11 +9,11 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
     this.hideOverlay = this.hideOverlay.bind(this);
   }
 
-  showOverlay(id) {
+  showOverlay(id) { // eslint-disable-line
     document.querySelector(`.${id}`).style.visibility = 'visible';
   }
 
-  hideOverlay(id) {
+  hideOverlay(id) { // eslint-disable-line
     document.querySelector(`.${id}`).style.visibility = 'hidden';
   }
 
@@ -25,11 +25,11 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
       <ReactWOW animation={data.animation} scroll data-wow-duration="2s" data-wow-delay="5s">
         <div className="skill wow">
           <div onMouseEnter={() => { this.showOverlay(`o-${data.id}`); }} onMouseLeave={() => { this.hideOverlay(`o-${data.id}`); }} className="img-cont">
-            <div className={`${'overlay ' + 'o-'}${data.id}`}>
+            <div className={`overlay + o-${data.id}`}>
               <a href={data.src} rel="noopener noreferrer" target="_blank"> Live Demo </a>
             </div>
             <figure>
-              <img src={require(`../images/${data.id}.png`)} />
+              <img src={require(`../images/${data.id}.png`)} alt="project screenshot" /> // eslint-disable-line
             </figure>
           </div>
           <div className="desc">
