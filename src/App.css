@@ -13,7 +13,7 @@ html {
 /* Personal Info */
 
 .Typewriter .name{
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0 0 0.5em 0;
   background: radial-gradient(center 20px, circle, #616161 0%, #616161 20%, #282828 100%);
 }
@@ -398,5 +398,36 @@ footer {
 
   .Typewriter .role, .Typewriter .last-role, .Typewriter p {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .skills-page {
+    width: 100vw;
+    padding: 0;
+    background-size: contain;
+  }
+
+  .skill .tec-cont ul {
+    left: 43vw;
+    width: 57vw;
+  }
+  .skill .tec-cont ul li{
+    padding: 0.1em;
+  }
+
+  .skills-page .skill {
+    margin: 0;
+    width: 100%
+  }
+
+  .skills-page .skill .img-cont {
+    width: 40vw;
+    margin-left: 0.8em;
+  }
+
+  .skills-page .skill .desc {
+    left: 43vw;
+    width: 57vw
   }
 }
