@@ -13,7 +13,7 @@ function App() {
         <h2>TOP SKILLS</h2>
         <SkillsPage />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
