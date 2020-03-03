@@ -5,6 +5,7 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Landing Page */
@@ -12,7 +13,7 @@ html {
 /* Personal Info */
 
 .Typewriter .name{
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 0 0 0.5em 0;
   background: radial-gradient(center 20px, circle, #616161 0%, #616161 20%, #282828 100%);
 }
@@ -26,7 +27,7 @@ html {
 .Typewriter p{
   margin-bottom: 0.8em;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .Typewriter b{
@@ -44,9 +45,10 @@ html {
   width: 100%;
   margin: 0;
   text-align: center;
-  background: radial-gradient(rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0))no-repeat,
+  background: radial-gradient(rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.4))no-repeat,
               url('images/see.jpeg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .Typewriter {
@@ -72,12 +74,12 @@ a i{
 
 .Typewriter .role{
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .Typewriter .last-role{
   margin-bottom: 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 /* Scroll Animated icon */
@@ -135,7 +137,7 @@ a i{
     opacity: 1;
 
   }
-  33% {
+  30% {
     opacity: 1;
     transform: translateY(30px);
   }
@@ -177,26 +179,23 @@ a i{
 /* skills */
 
 .skills-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
-  /* background-color: #B5EBF5; */
+  padding: 2em;
+  background-image: linear-gradient(to bottom, #16222a, #3F0E40);
+  background-color: #16222a;
 }
 
 .skill{
-  width: 100%;
-  flex: 0 50%;
-  box-shadow: inset 0 0 10px 0 #000000;
-  padding: 0.8em;
+  width: 90%;
+  height: 23vh;
+  margin: 0 auto 2vh auto;
   box-sizing:border-box;
-  background-color: #0f0f23;
-  color: #00cc00;
+  color: #fff;
   font-family: 'Share Tech', sans-serif;
   text-align: center;
-  border: 1.1em solid #fff;
   border-radius: 3em;
+  display: flex;
 }
 
 h4{
@@ -209,17 +208,226 @@ h3, h4{
 
 .skill ul li{
   list-style: none;
-  color: #cccccc;
+  /* color: #cccccc; */
 }
 
 .skill ul{
   margin: 0 0 0.3em 0;
+  padding: 0;
 }
 .skill i{
   color: #000;
 }
 
+.skill .desc {
+  text-align: center;
+  width: 30%;
+}
+
+.skill .img-cont {
+  position: relative;
+  width: 30%;
+  height: 23vh;
+}
+
+.skill .img-cont .overlay {
+  position: absolute;
+  left: 0;
+  border-bottom: 0;
+  line-height: 23vh;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  background:
+    radial-gradient(
+      rgba(0, 0, 0, 0.8) 20%,
+      rgba(0, 0, 0, 0.5)
+    );
+  visibility: hidden;
+}
+
+.skill .img-cont .overlay a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.skill .img-cont .overlay a:hover {
+  text-decoration: underline;
+}
+
+.skill figure {
+  height: 10vh;
+  width: 100%;
+  height: 23vh;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.skill figure img {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skill .tec-cont {
+  width: 30%;
+}
+
+.skill .tec-cont ul{
+  margin-top: 2em;
+}
+
+.skill .tec-cont li{
+  display: inline;
+  border: 1px solid black;
+  padding: 0.5em;
+  margin-right: 0.2em;
+}
+
 h2{
   text-align: center;
   font-family: 'Share Tech', sans-serif;
+}
+
+/* Footer */
+footer {
+  height: 10vh;
+  margin-top: 5vh;
+  text-align: center;
+  width: 100vw;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width:790px) {
+
+  .Typewriter {
+    width: 90%;
+    left: 5%;
+  }
+
+  .skills-page .skill  {
+    display: block;
+    min-height: 35vh;
+    position: relative;
+  }
+
+  .skills-page .skill .img-cont {
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+    height: 35vh;
+    left: 0;
+  }
+
+  .skills-page .skill .img-cont figure {
+    height: 100%;
+  }
+
+  .skills-page .skill .desc, .skills-page .skill .tec-cont{
+    position: absolute;
+  }
+
+  .skills-page .skill .desc {
+    top: 5vh;
+    left: 52vw;
+  }
+
+  .skills-page .skill .tec-cont {
+    bottom: 5vh;
+    left: 52vw;
+    width: 30vw;
+  }
+
+  .skills-page .skill .tec-cont h4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:720px) {
+  /* Skills page */
+
+  .skills-page .skill {
+    height: 25vh;
+  }
+
+  .skills-page .skill .img-cont {
+    height: 25vh;
+    width: 45%;
+  }
+
+  .skills-page .skill .desc {
+    top: 0;
+  }
+
+  .skills-page .skill .desc h3 {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .desc h4 {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .desc ul li {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .tec-cont {
+    bottom: 10vh;
+  }
+
+  .skills-page .skill .tec-cont ul li {
+    font-size: 0.9em;
+  }
+
+  .skills-page .skill .tec-cont, .skills-page .skill .desc {
+    left: 45vw;
+    width: 35vw;
+  }
+
+  /* Landing Page */
+
+  .Typewriter .name {
+    font-size: 1.6em;
+  }
+
+  .Typewriter b {
+    font-size: 1.2em;
+  }
+
+  .Typewriter .role, .Typewriter .last-role, .Typewriter p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .skills-page {
+    width: 100vw;
+    padding: 0;
+    background-size: contain;
+  }
+
+  .skill .tec-cont ul {
+    left: 43vw;
+    width: 57vw;
+  }
+  .skill .tec-cont ul li{
+    padding: 0.1em;
+  }
+
+  .skills-page .skill {
+    margin: 0;
+    width: 100%
+  }
+
+  .skills-page .skill .img-cont {
+    width: 40vw;
+    margin-left: 0.8em;
+  }
+
+  .skills-page .skill .desc {
+    left: 43vw;
+    width: 57vw
+  }
 }

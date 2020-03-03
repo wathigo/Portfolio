@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Skill from './Skill';
-import skills from '../data';
+import skills from '../SkillData';
 
 function SkillsPage() {
   const skillsEl = skills.map(skill => <Skill data={skill} />); // eslint-disable-line
