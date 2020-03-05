@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="#">
+  <a href="https://simon-wathigo.netlify.com/">
     <img height="250" width="250" src="src/images/logo.png" alt="Logo">
   </a>
 
@@ -10,7 +10,7 @@
     React Project
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://simon-wathigo.netlify.com/">View Demo</a>
     ·
     <a href="https://github.com/wathigo/Portfolio/issues">Report Bug</a>
     ·
