@@ -94,6 +94,10 @@ a i{
   cursor: pointer;
 }
 
+#scroll {
+  cursor: pointer;
+}
+
 .chevron {
   position: absolute;
   width: 28px;
@@ -164,6 +168,7 @@ a i{
   animation: pulse 2s linear alternate infinite;
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .text:hover {
@@ -386,6 +391,15 @@ footer {
     width: 35vw;
   }
 
+  .skills-page .skill .desc .head h4 {
+    display: none;
+  }
+
+  .skills-page .skill .desc .head::after {
+    content: 'Technologies';
+    color: #f8d605;
+  }
+
   /* Landing Page */
 
   .Typewriter .name {
@@ -402,9 +416,17 @@ footer {
 }
 
 @media only screen and (max-width:500px) {
+  .landing-page .Typewriter {
+    left: 0;
+  }
+
+  .landing-page .scroll-icon {
+    bottom: 18vh;
+  }
+
   .skills-page {
     width: 100vw;
-    padding: 0;
+    padding: 0.5em 0 0 0.5em;
     background-size: contain;
   }
 

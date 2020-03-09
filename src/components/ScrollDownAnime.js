@@ -16,12 +16,11 @@ function ScrollDownAnime() {
     }, 9000);
   });
   return (
-    <div id="scroll" className="scroll-icon" onLoad={() => setLoaded(true)}>
+    <div id="scroll" onClick={handleClick} className="scroll-icon" onLoad={() => setLoaded(true)}>
       <div className="chevron" />
       <div className="chevron" />
       <div className="chevron" />
-      <button type="submit" onClick={handleClick} className="text">View my Skills</button>
-      {' '}
+      <span className="text">View my Skills</span>
     </div>
   );
 }
