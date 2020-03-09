@@ -8,14 +8,14 @@ function PersonalInfo() {
       <Typewriter
         onInit={typewriter => {
           typewriter.changeDelay(30)
-            .typeString("<p class='name'>I'M SIMON WATHIGO KINUTHIA</p>")
+            .typeString("<h1 class='name'>I'M SIMON WATHIGO KINUTHIA</h1>")
             .pauseFor(500)
             .typeString(
               '<b>Looking for opportunities as a:</b>',
             )
-            .typeString("<p class='role'>FULL STACK WEB DEVELOPER</p>")
-            .typeString("<p class='role'>FRONT END DEVELOPER</p>")
-            .typeString("<p class='last-role'>BACKEND END DEVELOPER</p>")
+            .typeString("<h5 class='role'>FULL STACK WEB DEVELOPER</h5>")
+            .typeString("<h5 class='role'>FRONT END DEVELOPER</h5>")
+            .typeString("<h5 class='last-role'>BACKEND END DEVELOPER</h5>")
             .pauseFor(1000)
             .changeDelay(5)
             .start();

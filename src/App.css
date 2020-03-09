@@ -12,14 +12,18 @@ html {
 
 /* Personal Info */
 
+.Typewriter  {
+  font-family: 'Share Tech', sans-serif;
+}
+
 .Typewriter .name{
   font-size: 2.5em;
   margin: 0 0 0.5em 0;
   background: radial-gradient(center 20px, circle, #616161 0%, #616161 20%, #282828 100%);
+  color: #fff;
 }
 
 .Typewriter p, b{
-  font-family: 'Share Tech', sans-serif;
   font-size: 1.5em;
   margin: 0;
 }
@@ -72,9 +76,10 @@ a i{
   color: #fff;
 }
 
-.Typewriter .role{
-  margin: 0;
+.Typewriter .role, .Typewriter .last-role{
   font-size: 1.2em;
+  color: #ffffff;
+  margin: 0;
 }
 
 .Typewriter .last-role{
