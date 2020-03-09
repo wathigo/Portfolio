@@ -26,8 +26,8 @@ class Skill extends React.Component { // eslint-disable-line react/prefer-statel
         <div className="skill wow">
           <div onMouseEnter={() => { this.showOverlay(`o-${data.id}`); }} onMouseLeave={() => { this.hideOverlay(`o-${data.id}`); }} className="img-cont">
             <div className={`overlay + o-${data.id}`}>
-              <a href={data.src} rel="noopener noreferrer" target="_blank"><i className="fas fa-link"></i> Live Demo </a>
-              <a href={data.github} rel="noopener noreferrer" target="_blank"><i className="fab fa-github-alt"></i> Git Repo </a>
+              <a href={data.src} className='l-1' rel="noopener noreferrer" target="_blank"><i className="fas fa-link"></i> Live Demo </a>
+              <a href={data.github} className='l-2' rel="noopener noreferrer" target="_blank"><i className="fab fa-github-alt"></i> Git Repo </a>
             </div>
             <figure>
               <img src={require(`../images/${data.id}.png`)} alt="project screenshot" />

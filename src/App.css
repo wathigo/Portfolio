@@ -463,7 +463,23 @@ footer {
     width: 57vw
   }
 
-  .skill .img-cont .overlay a {
-    font-size: 0.8em;
+  .skill .img-cont .overlay {
+    line-height: normal;
+  }
+
+  .skill .img-cont .overlay .l-1 {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .skill .img-cont .overlay .l-2 {
+    position: absolute;
+    top: 57%;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
