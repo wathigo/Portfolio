@@ -462,4 +462,8 @@ footer {
     left: 43vw;
     width: 57vw
   }
+
+  .skill .img-cont .overlay a {
+    font-size: 0.8em;
+  }
 }
