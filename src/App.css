@@ -262,6 +262,11 @@ h3, h4{
   text-decoration: none;
 }
 
+.skill .img-cont .overlay a i {
+  color: #fff;
+  font-size: 0.9em;
+}
+
 .skill .img-cont .overlay a:hover {
   text-decoration: underline;
 }

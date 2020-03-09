@@ -6,6 +6,7 @@ const skills = [
     tec: ['Ruby on Rails', 'JavaScript'],
     description: ['State Management', 'Active Record Queries', 'Model View Controller Pattern'],
     src: 'https://fb-phony.herokuapp.com/',
+    github: 'https://github.com/wathigo/facebook-clone',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const skills = [
     tec: ['HTML', 'CSS3'],
     description: ['Use of Semantic elements', 'Creation of mobile responsive pages'],
     src: 'https://wathigo.github.io/TNW-clone/',
+    github: 'https://github.com/wathigo/TNW-clone',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const skills = [
     tec: ['JavaScript', 'HTML', 'CSS'],
     description: ['DOM manipulation', 'Functional Programming'],
     src: 'https://rawcdn.githack.com/samgaco/battleship/99636649edc187e84328dea52993590378bfb4dc/dist/index.html',
+    github: 'https://github.com/wathigo/battleship',
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const skills = [
     tec: ['JavaScript', 'React'],
     description: ['Stateful Components', 'React Props'],
     src: 'https://fracalc.herokuapp.com/',
+    github: 'https://github.com/wathigo/Calculator',
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const skills = [
     tec: ['React', 'React-redux'],
     description: ['State Management'],
     src: 'https://librairie.herokuapp.com/',
+    github: 'https://github.com/wathigo/Bookstore',
   },
 ];
 
