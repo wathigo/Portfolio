@@ -271,6 +271,16 @@ h3, h4{
   text-decoration: underline;
 }
 
+.skill .img-cont .overlay:hover + figure {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.skill .img-cont .overlay:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
 .skill figure {
   height: 10vh;
   width: 100%;
