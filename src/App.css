@@ -52,6 +52,8 @@ html {
   background: radial-gradient(rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.4))no-repeat,
               url('images/see.jpeg') no-repeat;
   background-size: cover;
+  background-color: #464646;
+  background-position: center;
   background-attachment: fixed;
 }
 
