@@ -239,14 +239,14 @@ h3, h4{
 .skill .img-cont {
   position: relative;
   width: 30%;
-  height: 23vh;
+  height: 17vh;
 }
 
 .skill .img-cont .overlay {
   position: absolute;
   left: 0;
   border-bottom: 0;
-  line-height: 23vh;
+  line-height: 17vh;
   right: 0;
   bottom: 0;
   top: 0;
@@ -286,7 +286,7 @@ h3, h4{
 .skill figure {
   height: 10vh;
   width: 100%;
-  height: 23vh;
+  height: 17vh;;
   margin: 0;
   border: 1px solid black;
 }
@@ -443,7 +443,7 @@ footer {
   }
 
   .landing-page .scroll-icon {
-    bottom: 18vh;
+    bottom: 17vh;
   }
 
   .skills-page {
