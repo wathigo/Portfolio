@@ -1,7 +1,8 @@
 const skills = [
   {
     id: 1,
-    animation: 500,
+    img: '1.png',
+    animation: 600,
     name: 'REAL-ESTATE-CLIENT',
     tec: ['React.js', 'react-redux'],
     description: "A real estate application that is created using react and consumes a rails API. Some of the features includes state management using react-redux, front end authentication using browser cookies and react-redux, and flash messages for displaying information while perfoming asyncronous actions.",
@@ -10,7 +11,8 @@ const skills = [
   },
   {
     id: 2,
-    animation: 600,
+    img: '2.gif',
+    animation: 700,
     name: 'COVID-19-STATS',
     tec: ['React', 'react-redux', 'react-globe-gl'],
     description: "A mobile web application that fetches and displays official covid-19 data. Some of the features includes ability to filter data and visualize the data on the globe.",
@@ -19,7 +21,8 @@ const skills = [
   },
   {
     id: 3,
-    animation: 700,
+    img: '3.png',
+    animation: 600,
     name: 'BATTLESHIP',
     tec: ['JavaScript', 'HTML', 'CSS'],
     description: "A simple game that offers you two boards, user board, and a compuer board. User guesses the position of the ship on the computer board while the computer guesses the position of the ship on the user board. The player that attacks all the ships first wins.",
@@ -28,7 +31,8 @@ const skills = [
   },
   {
     id: 4,
-    animation: 800,
+    img: '4.png',
+    animation: 700,
     name: 'CALCULATOR',
     tec: ['JavaScript', 'React'],
     description: "A simple mobile web application that implements simple arithmetic operation such as addition, substraction, division, and substraction.",
@@ -37,7 +41,8 @@ const skills = [
   },
   {
     id: 5,
-    animation: 900,
+    img: '5.png',
+    animation: 600,
     name: 'BookStore CMS',
     tec: ['React', 'React-redux'],
     description: "A simple application made with react-redux that allows you to create, remove or filter books",
