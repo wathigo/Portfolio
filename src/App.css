@@ -260,7 +260,7 @@ h4{
 .skill .img-cont {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -292,8 +292,8 @@ h4{
 }
 
 .skill .img-cont .overlay p {
-  height: 30vh;
-  line-height: 30vh;
+  height: 40vh;
+  line-height: 40vh;
   text-align: center;
 }
 
@@ -351,7 +351,7 @@ footer {
   }
 }
 
-@media only screen and (max-width:720px) {
+@media only screen and (max-width:900px) {
   /* Landing Page */
   .Typewriter .name {
     font-size: 1.6em;
@@ -363,6 +363,10 @@ footer {
 
   .Typewriter .role, .Typewriter .last-role, .Typewriter p {
     font-size: 1em;
+  }
+
+  .skills-page > div {
+    margin: 1.2em;
   }
 }
 
@@ -377,9 +381,5 @@ footer {
 
   .skills-page {
     padding: 2em 0 2em 0;
-  }
-
-  .skills-page > div {
-    margin: 1.2em;
   }
 }
