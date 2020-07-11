@@ -21,7 +21,7 @@ const Skill = (props) => {
     <div>
       <VisibilitySensor once partialVisibility>
         {({ isVisible }) => (
-          <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
+          <Spring delay={data.animation} to={{ opacity: isVisible ? 1 : 0 }}>
             {({ opacity }) => (
               <div style={{ opacity }} ref={rootNode} className="skill wow">
                 <div onMouseEnter={() => { showOverlay(`o-${data.id}`); }} onMouseLeave={() => { hideOverlay(`o-${data.id}`); }} className="img-cont">
@@ -32,7 +32,7 @@ const Skill = (props) => {
                     </p>
                   </div>
                   <figure>
-                    <img src={require(`../images/${data.id}.png`)} alt="project screenshot" />
+                    <img src={require(`../images/${data.img}`)} alt="project screenshot" />
                   </figure>
                 </div>
                 <div className='btm'>
