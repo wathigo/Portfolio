@@ -1,7 +1,7 @@
 const skills = [
   {
     id: 1,
-    img: '1.png',
+    img: '1.gif',
     animation: 600,
     name: 'REAL-ESTATE-CLIENT',
     tec: ['React.js', 'react-redux'],
@@ -12,7 +12,7 @@ const skills = [
   {
     id: 2,
     img: '2.gif',
-    animation: 700,
+    animation: 800,
     name: 'COVID-19-STATS',
     tec: ['React', 'react-redux', 'react-globe-gl'],
     description: "A mobile web application that fetches and displays official covid-19 data. Some of the features includes ability to filter data and visualize the data on the globe.",
@@ -32,7 +32,7 @@ const skills = [
   {
     id: 4,
     img: '4.png',
-    animation: 700,
+    animation: 800,
     name: 'CALCULATOR',
     tec: ['JavaScript', 'React'],
     description: "A simple mobile web application that implements simple arithmetic operation such as addition, substraction, division, and substraction.",
@@ -41,8 +41,18 @@ const skills = [
   },
   {
     id: 5,
-    img: '5.png',
+    img: '5.gif',
     animation: 600,
+    name: 'TIC-tac-toe',
+    tec: ['JavaScript', 'DOM'],
+    description: "A simple application made with vanilla JavaScript that allows you to play the Tic-tac=toe game. Some of the knowledge acquired includes DOM manipulation and event handling.",
+    src: 'https://raw.githack.com/wathigo/Tic-tac-toe-js/master/index.html',
+    github: 'https://github.com/wathigo/Tic-tac-toe-js',
+  },
+  {
+    id: 6,
+    img: '6.png',
+    animation: 800,
     name: 'BookStore CMS',
     tec: ['React', 'React-redux'],
     description: "A simple application made with react-redux that allows you to create, remove or filter books",
