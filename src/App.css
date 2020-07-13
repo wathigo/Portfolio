@@ -191,62 +191,84 @@ a i{
 /* skills */
 
 .skills-page {
-  width: 98%;
-  margin: 0 auto;
   padding: 2em;
+  display: flex;
+  flex-wrap: wrap;  
   background-image: linear-gradient(to bottom, #16222a, #3F0E40);
-  background-color: #16222a;
 }
 
-.skill{
-  width: 90%;
-  height: 23vh;
-  margin: 0 auto 2vh auto;
-  box-sizing:border-box;
-  color: #fff;
-  font-family: 'Share Tech', sans-serif;
-  text-align: center;
-  border-radius: 3em;
-  display: flex;
+.skills-page .skill {
+  height: 100%;
+  position: relative;
+  padding-bottom: -12vh;
+  background-color: #fff;
+}
+
+.skills-page > div{
+  flex: 1 1 40%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.inner-skill {
+  display: inline-blockS;
+}
+
+.skills-page .skill .btm {
+    margin: 0.8em 0 0 0.8em;
+    padding-bottom: 10vh;
+}
+
+.skills-page .skill .btm .desc {
+  padding-bottom: 0.5em;
+}
+
+.skills-page .skill .btm .tec-cont ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 0.8em auto;
+  max-width: 100%;
+}
+
+.skills-page .skill .btm .tec-cont {
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+}
+
+.skills-page .skill .btm .tec-cont ul li {
+  display: inline-block;
+  border: 0.2px solid #464646;
+  padding: 0.5em;
+  border-right: none;
+}
+
+.skills-page .skill .btm .tec-cont ul li:last-of-type {
+  border-right: 0.2px solid #464646;
+}
+
+.skills-page .skill .btm .desc p {
+  margin:  0;
 }
 
 h4{
-  color: #f8d605;
-}
-
-h3, h4{
-  margin: 0 0 0.3em 0;
-}
-
-.skill ul li{
-  list-style: none;
-  /* color: #cccccc; */
-}
-
-.skill ul{
-  margin: 0 0 0.3em 0;
-  padding: 0;
-}
-.skill i{
-  color: #000;
-}
-
-.skill .desc {
-  text-align: center;
-  width: 30%;
+  color: #464646;
+  margin: 0 0 0.5em 0;
 }
 
 .skill .img-cont {
   position: relative;
-  width: 30%;
-  height: 17vh;
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .skill .img-cont .overlay {
   position: absolute;
   left: 0;
   border-bottom: 0;
-  line-height: 17vh;
   right: 0;
   bottom: 0;
   top: 0;
@@ -269,6 +291,12 @@ h3, h4{
   font-size: 0.9em;
 }
 
+.skill .img-cont .overlay p {
+  height: 40vh;
+  line-height: 40vh;
+  text-align: center;
+}
+
 .skill .img-cont .overlay a:hover {
   text-decoration: underline;
 }
@@ -284,9 +312,8 @@ h3, h4{
 }
 
 .skill figure {
-  height: 10vh;
   width: 100%;
-  height: 17vh;;
+  height: 100%;
   margin: 0;
   border: 1px solid black;
 }
@@ -297,21 +324,6 @@ h3, h4{
   margin: 0 auto;
 }
 
-.skill .tec-cont {
-  width: 30%;
-}
-
-.skill .tec-cont ul{
-  margin-top: 2em;
-}
-
-.skill .tec-cont li{
-  display: inline;
-  border: 1px solid black;
-  padding: 0.5em;
-  margin-right: 0.2em;
-}
-
 h2{
   text-align: center;
   font-family: 'Share Tech', sans-serif;
@@ -319,14 +331,39 @@ h2{
 
 /* Footer */
 footer {
-  height: 10vh;
+  min-height: 10vh;
   margin-top: 5vh;
-  text-align: center;
   width: 100vw;
   display: inline-block;
+  position: relative;
 }
 
+footer p {
+  display: inline-block;
+  position: absolute;
+  left: 3em;
+  height: 10vh;
+  line-height: 10vh;
+}
 
+footer ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 3em;
+}
+
+footer ul li {
+  display: inline-block;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+footer ul li i {
+  color: #f8d605;
+}
 @media only screen and (max-width:790px) {
 
   .Typewriter {
@@ -334,96 +371,13 @@ footer {
     left: 5%;
   }
 
-  .skills-page .skill  {
+  .skills-page {
     display: block;
-    min-height: 35vh;
-    position: relative;
-  }
-
-  .skills-page .skill .img-cont {
-    position: absolute;
-    width: 50%;
-    display: inline-block;
-    height: 35vh;
-    left: 0;
-  }
-
-  .skills-page .skill .img-cont figure {
-    height: 100%;
-  }
-
-  .skills-page .skill .desc, .skills-page .skill .tec-cont{
-    position: absolute;
-  }
-
-  .skills-page .skill .desc {
-    top: 5vh;
-    left: 52vw;
-  }
-
-  .skills-page .skill .tec-cont {
-    bottom: 5vh;
-    left: 52vw;
-    width: 30vw;
-  }
-
-  .skills-page .skill .tec-cont h4 {
-    display: none;
   }
 }
 
-@media only screen and (max-width:720px) {
-  /* Skills page */
-
-  .skills-page .skill {
-    height: 25vh;
-  }
-
-  .skills-page .skill .img-cont {
-    height: 25vh;
-    width: 45%;
-  }
-
-  .skills-page .skill .desc {
-    top: 0;
-  }
-
-  .skills-page .skill .desc h3 {
-    font-size: 0.9em;
-  }
-
-  .skills-page .skill .desc h4 {
-    font-size: 0.9em;
-  }
-
-  .skills-page .skill .desc ul li {
-    font-size: 0.9em;
-  }
-
-  .skills-page .skill .tec-cont {
-    bottom: 10vh;
-  }
-
-  .skills-page .skill .tec-cont ul li {
-    font-size: 0.9em;
-  }
-
-  .skills-page .skill .tec-cont, .skills-page .skill .desc {
-    left: 45vw;
-    width: 35vw;
-  }
-
-  .skills-page .skill .desc .head h4 {
-    display: none;
-  }
-
-  .skills-page .skill .desc .head::after {
-    content: 'Technologies';
-    color: #f8d605;
-  }
-
+@media only screen and (max-width:900px) {
   /* Landing Page */
-
   .Typewriter .name {
     font-size: 1.6em;
   }
@@ -434,6 +388,10 @@ footer {
 
   .Typewriter .role, .Typewriter .last-role, .Typewriter p {
     font-size: 1em;
+  }
+
+  .skills-page > div {
+    margin: 1.2em;
   }
 }
 
@@ -447,51 +405,6 @@ footer {
   }
 
   .skills-page {
-    width: 100vw;
-    padding: 0.5em 0 0 0.5em;
-    background-size: contain;
-  }
-
-  .skill .tec-cont ul {
-    left: 43vw;
-    width: 57vw;
-  }
-  .skill .tec-cont ul li{
-    padding: 0.1em;
-  }
-
-  .skills-page .skill {
-    margin: 0;
-    width: 100%
-  }
-
-  .skills-page .skill .img-cont {
-    width: 40vw;
-    margin-left: 0.8em;
-  }
-
-  .skills-page .skill .desc {
-    left: 43vw;
-    width: 57vw
-  }
-
-  .skill .img-cont .overlay {
-    line-height: normal;
-  }
-
-  .skill .img-cont .overlay .l-1 {
-    position: absolute;
-    top: 43%;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .skill .img-cont .overlay .l-2 {
-    position: absolute;
-    top: 57%;
-    left: 0;
-    right: 0;
-    text-align: center;
+    padding: 2em 0 2em 0;
   }
 }
