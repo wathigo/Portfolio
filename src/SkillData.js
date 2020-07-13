@@ -45,7 +45,7 @@ const skills = [
     animation: 600,
     name: 'TIC-tac-toe',
     tec: ['JavaScript', 'DOM'],
-    description: "A simple application made with vanilla JavaScript that allows you to play the Tic-tac=toe game. Some of the knowledge acquired includes DOM manipulation and event handling.",
+    description: "A simple application made with vanilla JavaScript that allows you to play the Tic-tac-toe game. Some of the knowledge acquired includes DOM manipulation and event handling.",
     src: 'https://raw.githack.com/wathigo/Tic-tac-toe-js/master/index.html',
     github: 'https://github.com/wathigo/Tic-tac-toe-js',
   },
