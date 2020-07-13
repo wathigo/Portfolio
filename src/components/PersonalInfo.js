@@ -14,8 +14,8 @@ function PersonalInfo() {
               '<b>Looking for opportunities as a:</b>',
             )
             .typeString("<h5 class='role'>FULL STACK WEB DEVELOPER</h5>")
-            .typeString("<h5 class='role'>FRONT END DEVELOPER</h5>")
-            .typeString("<h5 class='last-role'>BACKEND END DEVELOPER</h5>")
+            .typeString("<h5 class='role'>REACT/JAVASCRIPT DEVELOPER</h5>")
+            .typeString("<h5 class='last-role'>RUBY DEVELOPER</h5>")
             .pauseFor(1000)
             .changeDelay(5)
             .start();
