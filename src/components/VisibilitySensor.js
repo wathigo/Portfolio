@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import VSensor from "react-visibility-sensor";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import VSensor from 'react-visibility-sensor';
 
-const VisibilitySensor = (props) => {
-    const [state, setState] = useState({active: true})
+const VisibilitySensor = props => {
+    const [state, setState] = useState({ active: true })
     const { active } = state;
     const { once, children, ...theRest } = props;
     return (

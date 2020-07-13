@@ -27,9 +27,9 @@ function PersonalInfo() {
 
           typewriter.typeString('<b>Contact Information:</b>')
             .typeString('<p class="mail">Email: wathigosimon@gmail.com </p>')
-            .typeString('<a class="icons" href="https://linkedin.com/in/simon-wathigo-445370183"><i class="fab fa-linkedin-in"></i></a>')
-            .typeString('<a class="icons" href="https://github.com/wathigo"><i class="fab fa-github"></i></a>')
-            .typeString('<a class="icons" href="https://twitter.com/simon_wathigo"><i class="fab fa-twitter"></i></a>')
+            .typeString('<a class="icons" target="_blank" href="https://linkedin.com/in/simon-wathigo-445370183"><i class="fab fa-linkedin-in"></i></a>')
+            .typeString('<a class="icons" target="_blank" href="https://github.com/wathigo"><i class="fab fa-github"></i></a>')
+            .typeString('<a class="icons" target="_blank" href="https://twitter.com/simon_wathigo"><i class="fab fa-twitter"></i></a>')
             .start();
         }}
       />

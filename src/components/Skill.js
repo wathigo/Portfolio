@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
-import { Spring } from "react-spring/renderprops";
-import VisibilitySensor from "./VisibilitySensor";
+import { Spring } from 'react-spring/renderprops';
+import VisibilitySensor from './VisibilitySensor';
 
-const Skill = (props) => {
+const Skill = props => {
   const rootNode = useRef(null);
 
   const showOverlay = (id) => { // eslint-disable-line
