@@ -331,14 +331,39 @@ h2{
 
 /* Footer */
 footer {
-  height: 10vh;
+  min-height: 10vh;
   margin-top: 5vh;
-  text-align: center;
   width: 100vw;
   display: inline-block;
+  position: relative;
 }
 
+footer p {
+  display: inline-block;
+  position: absolute;
+  left: 3em;
+  height: 10vh;
+  line-height: 10vh;
+}
 
+footer ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 3em;
+}
+
+footer ul li {
+  display: inline-block;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+footer ul li i {
+  color: #16222a;
+}
 @media only screen and (max-width:790px) {
 
   .Typewriter {
