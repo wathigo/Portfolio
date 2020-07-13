@@ -1,3 +1,4 @@
+// eslint-disable
 const skills = [
   {
     id: 1,
