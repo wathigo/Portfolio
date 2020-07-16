@@ -55,7 +55,7 @@ const skills = [
     animation: 800,
     name: 'BookStore CMS',
     tec: ['React', 'React-redux'],
-    description: "A simple application made with react-redux that allows you to create, remove or filter books",
+    description: "A simple application made with react-redux that allows you to create, remove or filter books.",
     src: 'https://librairie.herokuapp.com/',
     github: 'https://github.com/wathigo/Bookstore',
   },
