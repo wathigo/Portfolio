@@ -1,7 +1,11 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Spring } from 'react-spring/renderprops';
+import { useSpring, animated } from 'react-spring'
 import VisibilitySensor from './VisibilitySensor';
+
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 70, (x - window.innerWidth / 2) / 70, 1.01]
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const Skill = props => {
   const rootNode = useRef(null);
@@ -17,13 +21,26 @@ const Skill = props => {
   const { data } = props;
   const technologies = data.tec.map(desc => <li>{desc}</li>); // eslint-disable-line
 
+  const [anime, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+
   return ( /* eslint-disable */
     <div>
       <VisibilitySensor once partialVisibility>
         {({ isVisible }) => (
           <Spring delay={data.animation} to={{ opacity: isVisible ? 1 : 0 }}>
             {({ opacity }) => (
-              <div style={{ opacity }} ref={rootNode} className="skill wow">
+              <animated.div
+                onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                style={
+                  {
+                    transform: anime.xys.interpolate(trans),
+                    opacity: opacity
+                  }
+                }
+                ref={rootNode}
+                className="skill wow"
+              >
                 <div onMouseEnter={() => { showOverlay(`o-${data.id}`); }} onMouseLeave={() => { hideOverlay(`o-${data.id}`); }} className="img-cont">
                   <div className={`overlay + o-${data.id}`}>
                     <p>
@@ -52,7 +69,7 @@ const Skill = props => {
                   </div>
                 </div>
 
-              </div>
+              </animated.div>
             )}
           </Spring>
         )}
